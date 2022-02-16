@@ -1,0 +1,84 @@
+{
+  "widgetName": "WaterfallChart",
+  "guid": "0f175fca-3c61-1549-9e81-04f4a626a3e2",
+  "displayName": "WaterfallChart",
+  "category": "Miscellaneous",
+  "description": "Sample widget for getting start",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+		"src/ej2Allcharts.min.js"
+    ],
+    "styles": [
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Value",
+      "valueType": "measure",
+      "name": "Value",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    },
+    {
+      "displayName": "Column",
+      "valueType": "dimension",
+      "name": "Column",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    }
+  ],
+  "functionalities": [
+	{
+		"header": "Basic Settingssss",
+		"properties": [
+			{ "displayName": "Enable Animation", "controlType": "bool", "name": "animation", "defaultValue": "false" },
+			{ "displayName": "Show Value Label", "controlType": "bool", "name": "showvaluelabel", "defaultValue": "true" },
+			{ "displayName": "Orientation", "controlType": "enumeration", "name": "orientations", "defaultValue": "Vertical", "listItems": [ "Vertical", "Horizontal"] },
+			{ "displayName": "Increase Color", "controlType": "color", "name": "increasecolor", "defaultValue": "#1aab40" },
+			{ "displayName": "Decrease Color", "controlType": "color", "name": "decreasecolor", "defaultValue": "#d64554" }
+		]
+    },
+	{
+		"header": "Axis",
+		"properties": [
+			{ "displayName": "Category Axis", "controlType": "bool", "name": "categoryaxis", "defaultValue": "true" },
+			{ "displayName": "Category Axis Title", "controlType": "bool", "name": "customcategoryaxis", "defaultValue": "false" },
+			{ "displayName": "Custom Category Axis Title", "controlType": "text", "name": "categoryaxistitle", "defaultValue": "Category" },
+			{ "displayName": "Label Overflow Mode", "controlType": "enumeration", "name": "labeloverflowmode", "defaultValue": "Hide", "listItems": [ "Hide", "Trim" ] },
+			{ "displayName": "Label Rotation", "controlType": "enumeration", "name": "labelrotation", "defaultValue": "0", "listItems": [ "0", "+45", "+90", "-45", "-90" ] },
+			{ "displayName": "Primary Value Axis", "controlType": "bool", "name": "primaryvalueaxis", "defaultValue": "true" },
+			{ "displayName": "Primary Value Axis Title", "controlType": "bool", "name": "customprimaryvalueaxis", "defaultValue": "false" },
+			{ "displayName": "Custom Primary Value Axis Title", "controlType": "text", "name": "primaryvalueaxistitle", "defaultValue": "Value" }
+		]
+	},
+	{
+		"header": "Grid Line",
+		"properties": [
+			{ "displayName": "Primary Value Axis", "controlType": "bool", "name": "primarygridline", "defaultValue": "true" },
+			{ "displayName": "Category Axis", "controlType": "bool", "name": "categorygridline", "defaultValue": "true" }
+		]
+    },
+	{
+		"header": "Total",
+		"properties": [
+			{ "displayName": "Show Total", "controlType": "bool", "name": "showtotal", "defaultValue": "true" },
+			{ "displayName": "Title", "controlType": "text", "name": "totaltitle", "defaultValue": "Total" },
+			{ "displayName": "Color", "controlType": "color", "name": "totalcolor", "defaultValue": "#12239e" }
+		]
+	}
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

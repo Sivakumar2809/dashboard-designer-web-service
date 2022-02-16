@@ -1,0 +1,50 @@
+{
+  "widgetName": "DateTimePicker",
+  "guid": "6f275fca-3c61-4444-9e81-05f5a626a3e2",
+  "displayName": "DateTimePicker",
+  "category": "Miscellaneous",
+  "description": "Sample widget for getting start",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+		"src/ej2.DateTimePicker.min.js"
+    ],
+    "styles": [
+		"style/material.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Date",
+      "valueType": "dimension",
+      "name": "Column",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    }
+  ],
+  "functionalities": [
+	{
+      "header": "Test Property",
+      "properties": [
+        {
+          "displayName": "Text",
+          "controlType": "text",
+          "name": "stext",
+          "defaultValue": ""
+        }
+      ]
+    }
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "true"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

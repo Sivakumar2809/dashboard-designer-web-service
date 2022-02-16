@@ -1,0 +1,274 @@
+{
+  "widgetName": "RangeColumn",
+  "guid": "c12bc951-a461-4f7e-96e7-7d0a199c49c4",
+  "displayName": "RangeColumnChart",
+  "category": "Miscellaneous",
+  "description": "Range Column Chart is essentially a Column Chart that draws the series using two Y-axis values at a time, Low and High, instead of plotting single Y-axis values one by one",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "enableIFrame": "false",
+  "dependencies": {
+    "scripts": [
+		"src/ej.chart.min.js"
+    ],
+    "styles": [
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Date column",
+      "valueType": "dimension",
+      "name": "date",
+      "min": "1",
+      "max": "1",
+      "optional": "true"
+    },
+    {
+      "displayName": "Start Time",
+      "valueType": "dimension",
+      "name": "sTime",
+      "min": "1",
+      "max": "2",
+      "optional": "true"
+    },
+    {
+      "displayName": "End Time",
+      "valueType": "dimension",
+      "name": "eTime",
+      "min": "1",
+      "max": "2",
+      "optional": "true"
+    },
+    {
+      "displayName": "Persons",
+      "valueType": "dimension",
+      "name": "person",
+      "min": "1",
+      "max": "1",
+      "optional": "true"
+    },
+	{
+      "displayName": "Filters",
+      "valueType": "Both",
+      "name": "filter",
+      "min": "1",
+      "max": "1",
+      "optional": "true"
+    }
+  ],
+  "functionalities": [
+    {
+      "header": "Basic Settings",
+      "properties": [
+        {
+          "displayName": "Enable Animation",
+          "controlType": "bool",
+          "name": "enableAnimation",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show Legend",
+          "controlType": "bool",
+          "name": "showLegend",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show Datalabels",
+          "controlType": "bool",
+          "name": "showDatalabels",
+          "defaultValue": "false"
+        },
+		{
+          "displayName": "DataLabel FontSize",
+          "controlType": "number",
+          "name": "datalabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "Label Position",
+          "controlType": "enumeration",
+          "name": "labelPosition",
+          "defaultValue": "Middle",
+          "listItems": [
+            "Left",
+            "Middle",
+			"Right"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "GridLine Settings",
+      "properties": [
+        {
+          "displayName": "Category Axis",
+          "controlType": "bool",
+          "name": "showGridLineForXaxis",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "PrimaryValue Axis",
+          "controlType": "bool",
+          "name": "showGridLineForYaxis",
+          "defaultValue": "true"
+        }
+      ]
+    },
+    {
+      "header": "Categoryaxis Settings",
+      "properties": [
+        {
+          "displayName": "Show CategoryAxis",
+          "controlType": "bool",
+          "name": "showCategoryAxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show CategoryAxis Title",
+          "controlType": "bool",
+          "name": "showCategoryAxisTitle",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show CategoryAxis Titletext",
+          "controlType": "text",
+          "name": "showCategoryAxisTitletext",
+          "defaultValue": " "
+        },
+        {
+          "displayName": "Label Overflow Mode",
+          "controlType": "enumeration",
+          "name": "labelOverflowMode",
+          "defaultValue": "Hide",
+          "listItems": [
+            "Hide",
+            "Trim"
+          ]
+        },
+        {
+          "displayName": "Label Rotation",
+          "controlType": "enumeration",
+          "name": "labelRotation",
+          "defaultValue": 0,
+          "listItems": [
+            "0",
+            "-45",
+            "-90",
+            "45",
+            "90"
+          ]
+        },
+        {
+          "displayName": "Label FontSize",
+          "controlType": "number",
+          "name": "xlabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "Show MajorTicks",
+          "controlType": "bool",
+          "name": "xmajorticks",
+          "defaultValue": "true"
+        },
+		{
+          "displayName": "Show MinorTicks",
+          "controlType": "bool",
+          "name": "xminorticks",
+          "defaultValue": "true"
+        }
+      ]
+    },
+    {
+      "header": "Primaryaxis Settings",
+      "properties": [
+        {
+          "displayName": "Show PrimaryAxis",
+          "controlType": "bool",
+          "name": "showPrimaryAxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show PrimaryAxis Title",
+          "controlType": "bool",
+          "name": "showPrimaryAxisTitle",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show PrimaryAxis Titletext",
+          "controlType": "text",
+          "name": "showPrimaryAxisTitletext",
+          "defaultValue": " "
+        },
+        {
+          "displayName": "Label FontSize",
+          "controlType": "number",
+          "name": "ylabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "Show MajorTicks",
+          "controlType": "bool",
+          "name": "ymajorticks",
+          "defaultValue": "true"
+        },
+		{
+          "displayName": "Show MinorTicks",
+          "controlType": "bool",
+          "name": "yminorticks",
+          "defaultValue": "true"
+        }
+      ]
+    },
+	{
+      "header": "Color Settings",
+      "properties": [
+        {
+          "displayName": "Color 1",
+          "controlType": "color",
+          "name": "color1",
+          "defaultValue": "#77A7FB"
+        },
+        {
+          "displayName": "Color 2",
+          "controlType": "color",
+          "name": "color2",
+          "defaultValue": "#E57368"
+        },
+        {
+          "displayName": "Color 3",
+          "controlType": "color",
+          "name": "color3",
+          "defaultValue": "#FBCB43"
+        },
+        {
+          "displayName": "Color 4",
+          "controlType": "color",
+          "name": "color4",
+          "defaultValue": "#34B67A"
+        },
+        {
+          "displayName": "Color 5",
+          "controlType": "color",
+          "name": "color5",
+          "defaultValue": "#F1AB68"
+        }
+      ]
+    }
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "true"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

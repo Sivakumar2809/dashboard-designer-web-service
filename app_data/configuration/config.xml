@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SystemSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+  <IsCustomBinding>false</IsCustomBinding>
+  <CopyrightInformation>Copyright &amp;copy; 2001 - $$CurrentYear$$ Syncfusion Inc.   |   All Rights Reserved</CopyrightInformation>
+  <DRM>JqdkafmTr/J7ZqsN8aWdmFDKp2ADz5b/N6AQBsqnAyRYApPYcpwvVxQKJJElY/odaWhWNupH5MSOLfZ+fjW4Tm53JpxxrQ2vaQlqIAvN9pL0Ni6yozXi4pGK8WQvzzT+4FennzUqPaJBfCAtok/d3fWnPSSVUxn7vtdzJjYnuKrTHAzyVxI/xT6h6asN9Qdcm/M1i3KJSnA7U5/gRvzfkam90+BzCn20Fu1wNAciY4d9+OthPKuRBN603Arr6bLaiRa9Dg/h3DMBIbATrMaN3QElFRsZ12j4AOd9UOT/VJvufAvHdJJ/0AXswbDXZ+U4Qx/fENiatMW0bppDCqGIAb6DKS1AGdX2ZEYxnLGGssFN75jFYUGphM0wFcoKBqWA0laaESsEPUjoc3yg4xq9KXknh5fCo9+o52lSTSDsUPAjMYimYEIknz+0j4+SAdCFuE1Y4mqoW7oPdj7AzFcMBpYVFiwuGUuKaLfrmTHON/wvVyYz8Ss6OYXy3t6eR3/mR7ZfhvdTLW0M4L9oXERbD7ACBTIl+I0yUtuoTzk0NLhRnJeEVsne1E3s9cTkEm6eeY/HH/Z3bTkDkItyvwf/H2X1YvjXJCQP7nGorGQseZfbK9rRN5M9MrMezI+wc96nPmDYV4tTbtpasgkiykNQTyKwPDZtLnW8lB4b4WJcYIbDRuIgaR7IpyvlRoqmlOlNj0fF3zRFOGRtDwEGt25Jv463UbDBD1i6krKCIiUyPaUl7z/bGEpvTk39XnkSipW8/tRxBw7esAdaBJxUYSz2xg==</DRM>
+  <IsShowPoweredBySyncfusion>true</IsShowPoweredBySyncfusion>
+  <OrganizationName>Bold BI On-Premise Dashboards</OrganizationName>
+  <StorageType>0</StorageType>
+  <WelcomeNoteText>Welcome to Bold BI On-Premise Dashboards</WelcomeNoteText>
+  <IsMarkItemsPublic>false</IsMarkItemsPublic>
+  <TimeFormat>false</TimeFormat>
+  <UseCDN>false</UseCDN>
+  <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+  <InternalAppDataServiceUrl>http://linux.boldbi.com/bi/designer</InternalAppDataServiceUrl>
+  <IsEnableDefaultView>false</IsEnableDefaultView>
+  <IsEmbedEnabled>false</IsEmbedEnabled>
+  <IsEnableAutosaveFilter>false</IsEnableAutosaveFilter>
+  <IsSystemLanguagePreference>false</IsSystemLanguagePreference>
+  <IsMaster>false</IsMaster>
+  <InternalAppClientId>07e74fbc-fb64-4e5e-8787-41a5023fdd88</InternalAppClientId>
+  <InternalAppClientSecret>XkkW0JUafepigFvMSLQfxZCkPsRIJUJLLbyiB/V3a0NbyQfbpmfeJe/3T2fifCWepIhSOMt8e3CVuvd1XA7sqA==</InternalAppClientSecret>
+  <InternalAppIdpUrl>http://dev-ds-onpremise-core.boldbi.com</InternalAppIdpUrl>
+  <IdaTenant />
+  <IdaAudience />
+  <PreviewFeatures>
+    <Localization>false</Localization>
+  </PreviewFeatures>
+  <IsIsolationCodeEnabled>false</IsIsolationCodeEnabled>
+  <IsTenantIsolationCodeEnabled>false</IsTenantIsolationCodeEnabled>
+<MachineKey>
+    <ValidationKey>D2180BE7020EE0B7D4C582B224EFE692B5E9C79CF103A1BEE09E9C138902E27B40DB3861EA113081BA6DF44A1BD5900DFE1393BEA68F73543829328290B7E329</ValidationKey>
+    <DecryptionKey>70A91362728C4E837FF342260E5454EC9D8D2B805BE82684</DecryptionKey>
+  </MachineKey>
+  <InternalAppUrls>
+    <Idp>http://linux.boldbi.com/</Idp>
+    <Bi>http://linux.boldbi.com/bi</Bi>
+    <BiDesigner>http://linux.boldbi.com/bi/designer</BiDesigner>
+    <Reports></Reports>
+    <ReportsService></ReportsService>
+  </InternalAppUrls>
+</SystemSettings>

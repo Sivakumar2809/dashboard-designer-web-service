@@ -1,0 +1,17 @@
+[Unit]
+Description=Dashboard Designer Service for Bold BI
+
+[Service]
+WorkingDirectory=/var/www/bold-services/application/bi/dataservice
+ExecStart=/var/www/bold-services/dotnet/dotnet /var/www/bold-services/application/bi/dataservice/Syncfusion.Dashboard.Designer.Web.Service.dll --urls=http://localhost:6507
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=bold-bi-designer
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target

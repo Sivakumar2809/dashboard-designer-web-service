@@ -1,0 +1,268 @@
+{
+  "widgetName": "ThumbnailGrid",
+  "guid": "79bd7bce-a33f-42a6-928d-2caa75fab25d",
+  "displayName": "ThumbnailGrid",
+  "category": "Miscellaneous",
+  "description": "Sample widget for getting start",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+      "src/ej2CustomGrid.min.js"
+    ],
+    "styles": [
+      "style/widget.css",
+      "style/material.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Avatar Image Data",
+      "valueType": "both",
+      "name": "column1",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    },
+	{
+      "displayName": "Column",
+      "valueType": "both",
+      "name": "column",
+      "min": "1",
+      "max": "100",
+      "optional": "false"
+    },
+	{
+      "displayName": "Snippet Image Data",
+      "valueType": "both",
+      "name": "column2",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    },
+    {
+      "displayName": "Filters",
+      "valueType": "none",
+      "name": "FilterColumn",
+      "min": "1",
+      "max": "10",
+      "optional": "true"
+    }
+  ],
+  "functionalities": [
+    {
+      "header": "Basic Settings",
+      "properties": [
+        {
+          "displayName": "Allow Sorting",
+          "controlType": "bool",
+          "name": "allowSorting",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Allow Filter",
+          "controlType": "bool",
+          "name": "allowfilter",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Horizontal Grid Lines",
+          "controlType": "bool",
+          "name": "horizontal",
+          "defaultValue": "true"
+        },
+        //{
+        //  "displayName": "Vertical Grid Lines",
+        //  "controlType": "bool",
+        //  "name": "vertical",
+        //  "defaultValue": "false"
+        //},
+        {
+          "displayName": "Show Border",
+          "controlType": "bool",
+          "name": "showBorder",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Enable Alternative Row",
+          "controlType": "bool",
+          "name": "enablealtrow",
+          "defaultValue": "false"
+        },
+		{
+          "displayName": "Enable TextWrap",
+          "controlType": "bool",
+          "name": "enableTextWrap",
+          "defaultValue": "true"
+        }
+      ]
+    },
+    {
+      "header": "Header Settings",
+      "properties": [
+        {
+          "displayName": "Show Header",
+          "controlType": "bool",
+          "name": "showHeader",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "headerforeground",
+          "defaultValue": "#2D3748"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "headerbackground",
+          "defaultValue": "#f3f7fa"
+        },
+        {
+          "displayName": "Row Height",
+          "controlType": "number",
+          "name": "headerrowheight",
+          "defaultValue": 20,
+          "min": "15",
+          "max": "120"
+        },
+        {
+          "displayName": "Auto Font Size",
+          "controlType": "bool",
+          "name": "headerautofontsize",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Font Size",
+          "controlType": "number",
+          "name": "headerfontsize",
+          "defaultValue": 16,
+          "min": "10",
+          "max": "60"
+        },
+        {
+          "displayName": "Padding",
+          "controlType": "number",
+          "name": "headerpadding",
+          "defaultValue": 11,
+          "min": "1",
+          "max": "20"
+        }
+      ]
+    },
+    {
+      "header": "Content Settings",
+      "properties": [
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "contentforeground",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "contentbackground",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "displayName": "Alternative Foreground",
+          "controlType": "color",
+          "name": "alternativeforeground",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Alternative Background",
+          "controlType": "color",
+          "name": "alternativebackground",
+          "defaultValue": "#f7f7f7"
+        },
+        {
+          "displayName": "Row Height",
+          "controlType": "number",
+          "name": "contentrowheight",
+          "defaultValue": 32,
+          "min": "15",
+          "max": "120"
+        },
+        {
+          "displayName": "Auto Font Size",
+          "controlType": "bool",
+          "name": "contentautofontsize",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Font Size",
+          "controlType": "number",
+          "name": "contentfontsize",
+          "defaultValue": 16,
+          "min": "10",
+          "max": "60"
+        },
+        {
+          "displayName": "Padding",
+          "controlType": "number",
+          "name": "contentpadding",
+          "defaultValue": 11,
+          "min": "1",
+          "max": "20"
+        }
+      ]
+    },
+	{
+      "header": "Avatar Image Settings",
+      "properties": [
+ 
+        {
+          "displayName": "Image Height",
+          "controlType": "number",
+          "name": "avatarImgHeight",
+          "defaultValue": 30,
+		  "min": "1",
+          "max": "150"
+        },
+        {
+          "displayName": "Image Width",
+          "controlType": "number",
+          "name": "avatarImgWidth",
+          "defaultValue": 30,
+		  "min": "1",
+          "max": "150"
+        }
+      ]
+    },
+	{
+      "header": "Snippet Image Settings",
+      "properties": [
+ 
+        {
+          "displayName": "Image Height",
+          "controlType": "number",
+          "name": "snippetImgHeight",
+          "defaultValue": 30,
+		  "min": "1",
+          "max": "150"
+        },
+        {
+          "displayName": "Image Width",
+          "controlType": "number",
+          "name": "snippetImgWidth",
+          "defaultValue": 30,
+		  "min": "1",
+          "max": "150"
+        }
+      ]
+    },
+    
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "true"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

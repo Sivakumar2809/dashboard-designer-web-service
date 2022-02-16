@@ -1,0 +1,82 @@
+{
+  "widgetName": "CustomTreeGrid",
+  "guid": "52ffacbc-bbeb-4e85-b6a4-3562656dba1e",
+  "displayName": "TreeGrid",
+  "category": "Miscellaneous",
+  "description": "The TreeGrid is used to represent the hierarchical data in a tabular format",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+      "src/ej2.treegrid.min.js"
+    ],
+    "styles": [
+      "style/material.css",
+      "style/widget.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Columns",
+      "valueType": "dimension",
+      "name": "column",
+      "min": "1",
+      "max": "10",
+      "optional": "false"
+    }
+  ],
+  "functionalities": [
+    {
+      "header": "Basic Settings",
+      "properties": [
+        {
+          "displayName": "Allow Paging",
+          "controlType": "bool",
+          "name": "paging",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Allow Text-Wrapping",
+          "controlType": "bool",
+          "name": "wrapping",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "GridLines",
+          "controlType": "enumeration",
+          "name": "gridline",
+          "defaultValue": "Both",
+          "listItems": [
+            "Default",
+            "None",
+            "Horizontal",
+            "Vertical",
+            "Both"
+          ]
+        },
+        {
+          "displayName": "Parent column Index",
+          "controlType": "text",
+          "name": "parent",
+          "defaultValue": "0"
+        },
+        {
+          "displayName": "Child column Indexes",
+          "controlType": "text",
+          "name": "childs",
+          "defaultValue": "1"
+        }
+      ]
+    }
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "true"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

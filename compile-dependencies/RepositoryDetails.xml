@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modes
+	CheckOut = 0,
+	CreateTag = 1,
+	CreateBranch = 2,
+	PushToTargetBranch= 3
+ignoreBuild="true"
+-->
+<GitAction mode="CheckOut" targetBranch="" tagName="test">
+<SourceRepositories>
+	<RepositoryGroup groupId="1" isDependent="false" dependentGroupId="0">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-datasource-json" folderName="dashboard-datasource-json"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/boldbi-localization" folderName="boldbi-localization"></Repository>		
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-core" folderName="dashboard-designer-web-core"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-json-serialization" folderName="dashboard-designer-web-json-serialization"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-core-configuration" folderName="dashboard-designer-web-core-configuration" ></Repository>
+		 <Repository branchName="development" repoUrl="https://github.com/bold-bi/data-analytics-base" folderName="data-analytics-base"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-data-manager" folderName="dashboard-designer-web-data-manager" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-logger" folderName="dashboard-designer-web-logger" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="2" isDependent="false" dependentGroupId="0">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-ej-widgets" folderName="dashboard-ej-widgets" cdn="true"></Repository>	
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-ej2-widgets" folderName="dashboard-ej2-widgets" cdn="true"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-viewer" folderName="dashboard-viewer" cdn="true"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-designer" folderName="dashboard-designer-web-designer" cdn="true"></Repository>	
+	</RepositoryGroup>
+
+	<RepositoryGroup groupId="3" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-xml-serialization" folderName="dashboard-designer-web-xml-serialization"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-oauth" folderName="dashboard-designer-web-oauth-handler" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-serialization" folderName="dashboard-designer-web-serialization" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-data-handler" folderName="dashboard-designer-web-data-handler" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-serialization-porter" folderName="dashboard-designer-web-serialization-porter"> </Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-base" folderName="dashboard-designer-web-base" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="4" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-sqlserver-model" folderName="dashboard-designer-web-connection-sqlserver-model" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-sqlserver-serialization" folderName="dashboard-designer-web-connection-sqlserver-serialization" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-sqlserver-plugin" folderName="dashboard-designer-web-connection-sqlserver-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="5" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-postgresql-model" folderName="dashboard-designer-web-connection-postgresql-model" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-postgresql-serialization" folderName="dashboard-designer-web-connection-postgresql-serialization" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-postgresql-plugin" folderName="dashboard-designer-web-connection-postgresql-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="6" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-mysql-model" folderName="dashboard-designer-web-connection-mysql-model" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-mysql-serialization" folderName="dashboard-designer-web-connection-mysql-serialization" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-mysql-plugin" folderName="dashboard-designer-web-connection-mysql-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="7" isDependent="true" dependentGroupId="1">	
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-oracle-model" folderName="dashboard-designer-web-connection-oracle-model" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-oracle-serialization" folderName="dashboard-designer-web-connection-oracle-serialization" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-oracle-plugin" folderName="dashboard-designer-web-connection-oracle-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="8" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-presto-plugin" folderName="dashboard-designer-web-connection-presto-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="9" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-odbc-plugin" folderName="dashboard-designer-web-connection-odbc-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="10" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-snowflake-plugin" folderName="dashboard-designer-web-connection-snowflake-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="11" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-ssas-plugin" folderName="dashboard-designer-web-connection-ssas-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="12" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-sqlite-plugin" folderName="dashboard-designer-web-connection-sqlite-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="13" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-cdata-plugin" folderName="dashboard-designer-web-connection-cdata-plugin" ></Repository>
+	</RepositoryGroup>
+	<!--<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-vertica-plugin" folderName="dashboard-designer-web-connection-vertica-plugin" ></Repository>-->
+	<RepositoryGroup groupId="14" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-influxdb-plugin" folderName="dashboard-designer-web-connection-influxdb-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="15" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-memsql-plugin" folderName="dashboard-designer-web-connection-memsql-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="16" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-sparksql-plugin" folderName="dashboard-designer-web-connection-sparksql-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="17" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-athena-plugin" folderName="dashboard-designer-web-connection-athena-plugin" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="18" isDependent="true" dependentGroupId="1">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-elasticsearch-plugin" folderName="dashboard-designer-web-connection-elasticsearch-plugin" ></Repository>
+	</RepositoryGroup>
+
+
+	<RepositoryGroup groupId="19" isDependent="true" dependentGroupId="3">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-clientconnection-model" folderName="cmodel" ></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-clientconnection-plugin" folderName="cplug" ></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="20" isDependent="true" dependentGroupId="3">
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-mongodb-model" folderName="dashboard-designer-web-connection-mongodb-model"></Repository>
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-mongodb-plugin" folderName="dashboard-designer-web-connection-mongodb-plugin"></Repository>
+	</RepositoryGroup>
+	<RepositoryGroup groupId="21" isDependent="true" dependentGroupId="3">	
+		<Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-googlebigquery-plugin" folderName="dashboard-designer-web-connection-googlebigquery-plugin" ></Repository>	
+	</RepositoryGroup>
+	<RepositoryGroup groupId="22" isDependent="true" dependentGroupId="3">
+        <Repository branchName="development" repoUrl="https://github.com/bold-bi/dashboard-designer-web-connection-live-plugin" folderName="dashboard-designer-web-connection-live-plugin" ></Repository>
+	</RepositoryGroup>
+   <!-- <Repository branchName="development-core" repoUrl="https://github.com/bold-bi/dashboard-designer-web-service" folderName="dashboard-designer-web-service" ></Repository> -->
+</SourceRepositories>
+</GitAction>

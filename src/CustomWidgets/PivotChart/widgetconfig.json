@@ -1,0 +1,246 @@
+{
+  "widgetName": "PivotChart",
+  "guid": "7fe5b33e-a101-47b1-8f5e-5e2f073c0f92",
+  "displayName": "PivotChart",
+  "category": "Miscellaneous",
+   "description": "Compare values for a set of unordered items across categories",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+      "src/ej2.pivotview.min.js"
+    ],
+    "styles": [
+      "style/widget.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Value",
+      "valueType": "measure",
+      "name": "value",
+      "min": "1",
+      "max": "2",
+      "optional": "false"
+    },
+    {
+      "displayName": "Column",
+      "valueType": "dimension",
+      "name": "column",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    },
+	{
+      "displayName": "Row",
+      "valueType": "dimension",
+      "name": "row",
+      "min": "1",
+      "max": "2",
+      "optional": "false"
+    }
+  ],
+  "functionalities": [
+    {
+      "header": "GridLine Settings",
+      "properties": [
+        {
+          "displayName": "Show Gridline Category Axis",
+          "controlType": "bool",
+          "name": "glxaxis",
+          "defaultValue": "true"
+        },
+		{
+          "displayName": "Show Gridline Primary Axis",
+          "controlType": "bool",
+          "name": "glyaxis",
+          "defaultValue": "true"
+        }
+      ]
+    },
+	{
+			"header": "Basic Settings",
+      "properties": [
+        {
+          "displayName": "Chart Type",
+          "controlType": "enumeration",
+          "name": "chartType",
+          "defaultValue": "StackingColumn",
+		  "listItems": [
+            "Line",
+            "Spline",
+			"Column",
+			"StackingColumn"
+          ]
+        },
+		{
+          "displayName": "Use Chart Color",
+          "controlType": "bool",
+          "name": "cchartColor",
+          "defaultValue": "true"
+        },
+		{
+          "displayName": "Chart Color",
+          "controlType": "color",
+          "name": "chartColor",
+          "defaultValue": "#00bdae"
+        },
+		{
+          "displayName": "Expand ALL",
+          "controlType": "bool",
+          "name": "expandAll",
+          "defaultValue": "true"
+        },
+		{
+          "displayName": "Enable Animation",
+          "controlType": "bool",
+          "name": "animation",
+          "defaultValue": "false"
+        },
+		 {
+          "displayName": "Sorting",
+          "controlType": "enumeration",
+          "name": "sort",
+          "defaultValue": "Ascending",
+		  "listItems": [
+            "Descending",
+            "Ascending"
+          ]
+        },
+        {
+          "displayName": "LabelIntersectAction",
+          "controlType": "enumeration",
+          "name": "labelintersectaction",
+          "defaultValue": "Hide",
+		  "listItems": [
+            "Trim",
+            "Hide"
+          ]
+        },
+		{
+          "displayName": "Show Category Axis",
+          "controlType": "bool",
+          "name": "showxaxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show Category Axis Title",
+          "controlType": "bool",
+          "name": "showxaxistitle",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Category Axis Title Text",
+          "controlType": "text",
+          "name": "xaxistitletext",
+          "defaultValue": ""
+        },
+        {
+          "displayName": "Show Primary Axis",
+          "controlType": "bool",
+          "name": "showyaxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show Primary Axis Title",
+          "controlType": "bool",
+          "name": "showyaxistitle",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Primary Axis Title Text",
+          "controlType": "text",
+          "name": "yaxistitletext",
+          "defaultValue": ""
+        }
+      ]
+	},
+	{
+      "header": "Legend Settings",
+      "properties": [
+        {
+          "displayName": "Show Legend",
+          "controlType": "bool",
+          "name": "showLegend",
+          "defaultValue": "true"
+        },
+		{
+          "displayName": "Legend Position",
+          "controlType": "enumeration",
+          "name": "legendPosition",
+          "defaultValue": "Bottom",
+		  "listItems": [
+            "Top",
+            "Right",
+			"Left",
+			"Bottom"
+          ]
+        },
+		{
+          "displayName": "Legend Shape",
+          "controlType": "enumeration",
+          "name": "legendShape",
+          "defaultValue": "SeriesType",
+		  "listItems": [
+            "SeriesType",
+            "Circle"
+          ]
+        }
+      ]
+    },
+	{
+      "header": "Format Settings",
+      "properties": [
+		{
+          "displayName": "Use Format Settings",
+          "controlType": "bool",
+          "name": "useFormat",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Prefix Value",
+          "controlType": "text",
+          "name": "prefix",
+          "defaultValue": "$"
+        },
+		{
+          "displayName": "Suffix Value",
+          "controlType": "text",
+          "name": "suffix",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Representation",
+          "controlType": "enumeration",
+          "name": "rep",
+          "defaultValue": "Auto",
+		  "listItems": [
+            "Ones",
+            "Thousands",
+			"Millions",
+			"Billions",
+			"Auto"
+          ]
+        },
+		{
+          "displayName": "Decimal Points",
+          "controlType": "number",
+          "name": "decimal",
+		  "min": "0",
+		  "max": "5",
+          "defaultValue": "2"
+        },
+      ]
+    }
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "true"
+    },
+    "ignoreMasterFilter": {
+      "visible": "false",
+      "defaultValue": "false"
+    }
+  }
+}

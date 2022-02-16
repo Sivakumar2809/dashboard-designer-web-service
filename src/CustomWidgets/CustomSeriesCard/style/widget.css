@@ -1,0 +1,28 @@
+.e-dbrd-custom-widget-card-title {
+    width: 65%;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 1%;
+    color: #f5f8ff;
+}
+.e-dbrd-custom-widget-card-icon {
+    width: 14px;
+    float: left;
+    font-size: 14px;
+    margin-right: 1%;
+}
+.e-dbrd-custom-widget-card-value {
+    width: 69%;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 3%;
+}

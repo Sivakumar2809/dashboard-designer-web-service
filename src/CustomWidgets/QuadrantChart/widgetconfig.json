@@ -1,0 +1,125 @@
+{
+  "widgetName": "QuadrantChart",
+  "guid": "13423676-238e-464e-9a98-99af98475f2f",
+  "displayName": "Quadrant Chart",
+  "category": "Miscellaneous",
+  "description": "Sample widget for getting start",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+      "src/ej2.chart.all.min.js"      
+    ],
+    "styles": [
+      "style/widget.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Y Value",
+      "valueType": "measure",
+      "name": "yvalue",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    },
+    {
+      "displayName": "X value",
+      "valueType": "measure",
+      "name": "xvalue",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    },
+	{
+      "displayName": "Series",
+      "valueType": "dimension",
+      "name": "series",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    }
+  ],
+  "functionalities": [
+    {
+      "header": "Text Properties",
+      "properties": [
+        {
+          "displayName": "Show Text",
+          "controlType": "checkbox",
+          "name": "showText",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Text",
+          "controlType": "textbox",
+          "name": "text",
+          "defaultValue": "My first widget is created successfully"
+        },
+        {
+          "displayName": "Background Color",
+          "controlType": "colorpicker",
+          "name": "textBackground",
+          "defaultValue": "#FFE5E5"
+        },
+        {
+          "displayName": "Size",
+          "controlType": "updown",
+          "name": "textSize",
+          "defaultValue": "17",
+          "min": "0",
+          "max": "600"
+        },
+        {
+          "displayName": "Style",
+          "controlType": "combobox",
+          "name": "textStyle",
+          "defaultValue": "normal",
+          "listItems": [
+            "normal",
+            "italic"
+          ]
+        }
+      ]
+    },
+	{
+			"header": "Basic Settings",
+      "properties": [
+        {
+		 "displayName": "Chart Left Bottom Color",
+          "controlType": "color",
+          "name": "colorbottomleft",
+          "defaultValue": "#fc902a"
+		},
+		{
+		 "displayName": "Chart Left Top Color",
+          "controlType": "color",
+          "name": "colortopleft",
+          "defaultValue": "#6aa84f"
+		},
+		{
+		 "displayName": "Chart Right Top Color",
+          "controlType": "color",
+          "name": "colortopright",
+          "defaultValue": "#3d85c6"
+		},
+		{
+		 "displayName": "Chart Right Bottom Color",
+          "controlType": "color",
+          "name": "colorbottomright",
+          "defaultValue": "#ffd966"
+		}
+		]
+		}
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

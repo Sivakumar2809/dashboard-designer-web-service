@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+<plugin name="sqlserver">
+<package id="Syncfusion.Dashboard.Connection.SQLServer" />
+<package id="Syncfusion.Dashboard.Connection.SQLServer.Json"/>
+<package id="Syncfusion.Dashboard.Connection.SQLServer.Model"/>
+</plugin>
+<plugin name="oracle">
+<package id="Syncfusion.Dashboard.Connection.Oracle" />
+<package id="Syncfusion.Dashboard.Connection.Oracle.Json"/>
+<package id="Syncfusion.Dashboard.Connection.Oracle.Model"/>
+</plugin>
+<plugin name="postgresql">
+<package id="Syncfusion.Dashboard.Connection.PostgreSQLServer" />
+<package id="Syncfusion.Dashboard.Connection.PostgreSQLServer.Json"/>
+<package id="Syncfusion.Dashboard.Connection.PostgreSQLServer.Model"/>
+</plugin>
+<plugin name="clientmodeconnections">
+<package id="Syncfusion.Dashboard.Connection.ClientMode"/>
+<package id="Syncfusion.Dashboard.Connection.ClientMode.Model"/>
+</plugin>
+<plugin name="mysqlserver">
+<package id="Syncfusion.Dashboard.Connection.MySQLServer" />
+<package id="Syncfusion.Dashboard.Connection.MySQLServer.Json"/>
+<package id="Syncfusion.Dashboard.Connection.MySQLServer.Model"/>
+</plugin>
+<plugin name="mongodbconnections">
+<package id="Syncfusion.Dashboard.Connection.MongoDB" />
+<package id="Syncfusion.Dashboard.Connection.MongoDB.Model"/>
+<package id="Syncfusion.Dashboard.Web.MongoDB.Driver"/>
+</plugin>
+<plugin name="presto">
+<package id="Syncfusion.Dashboard.Connection.presto" />
+<package id="Syncfusion.Dashboard.Connection.presto.Json"/>
+<package id="Syncfusion.Dashboard.Connection.presto.Model"/>
+</plugin>
+<plugin name="odbc">
+<package id="Syncfusion.Dashboard.Connection.Odbc" />
+<package id="Syncfusion.Dashboard.Connection.Odbc.Json"/>
+<package id="Syncfusion.Dashboard.Connection.Odbc.Model"/>
+</plugin>
+<plugin name="snowflake">
+<package id="Syncfusion.Dashboard.Connection.snowflake" />
+<package id="Syncfusion.Dashboard.Connection.snowflake.Json"/>
+<package id="Syncfusion.Dashboard.Connection.snowflake.Model"/>
+</plugin>
+<plugin name="google">
+<package id="Syncfusion.Dashboard.Connection.GoogleBigQuery" />
+<package id="Syncfusion.Dashboard.Connection.GoogleBigQuery.Json"/>
+<package id="Syncfusion.Dashboard.Connection.GoogleBigQuery.Model"/>
+</plugin>
+<plugin name="ssas">
+<package id="Syncfusion.Dashboard.Connection.SSAS" />
+<package id="Syncfusion.Dashboard.Connection.SSAS.Json"/>
+<package id="Syncfusion.Dashboard.Connection.SSAS.Model"/>
+</plugin>
+<plugin name="livewebconnection">
+<package id="Syncfusion.Dashboard.Connection.LiveWebConnection" />
+<package id="Syncfusion.Dashboard.Connection.LiveWebConnection.Json"/>
+<package id="Syncfusion.Dashboard.Connection.LiveWebConnection.Model"/>
+</plugin>
+<plugin name="sqlite">
+<package id="Syncfusion.Dashboard.Connection.SQLite" />
+<package id="Syncfusion.Dashboard.Connection.SQLite.Json"/>
+<package id="Syncfusion.Dashboard.Connection.SQLite.Model"/>
+</plugin>
+<plugin name="cdata">
+<package id="Syncfusion.Dashboard.Connection.CDATA" />
+<package id="Syncfusion.Dashboard.Connection.CDATA.Json"/>
+<package id="Syncfusion.Dashboard.Connection.CDATA.Model"/>
+</plugin>
+<plugin name="vertica">
+<package id="Syncfusion.Dashboard.Connection.vertica" />
+<package id="Syncfusion.Dashboard.Connection.vertica.Json"/>
+<package id="Syncfusion.Dashboard.Connection.vertica.Model"/>
+</plugin>
+<plugin name="influxdb">
+<package id="Syncfusion.Dashboard.Connection.InfluxDB" />
+<package id="Syncfusion.Dashboard.Connection.InfluxDB.Json"/>
+<package id="Syncfusion.Dashboard.Connection.InfluxDB.Model"/>
+</plugin>
+<plugin name="memsql">
+<package id="Syncfusion.Dashboard.Connection.MemSQL" />
+<package id="Syncfusion.Dashboard.Connection.MemSQL.Json"/>
+<package id="Syncfusion.Dashboard.Connection.MemSQL.Model"/>
+</plugin>
+<plugin name="sparksql">
+<package id="Syncfusion.Dashboard.Connection.SparkSQL" />
+<package id="Syncfusion.Dashboard.Connection.SparkSQL.Json"/>
+<package id="Syncfusion.Dashboard.Connection.SparkSQL.Model"/>
+</plugin>
+<plugin name="athena">
+<package id="Syncfusion.Dashboard.Connection.Athena" />
+<package id="Syncfusion.Dashboard.Connection.Athena.Json"/>
+<package id="Syncfusion.Dashboard.Connection.Athena.Model"/>
+</plugin>
+<plugin name="elasticsearch">
+<package id="Syncfusion.Dashboard.Connection.Elasticsearch" />
+<package id="Syncfusion.Dashboard.Connection.Elasticsearch.Json"/>
+<package id="Syncfusion.Dashboard.Connection.Elasticsearch.Model"/>
+</plugin>
+</plugins>

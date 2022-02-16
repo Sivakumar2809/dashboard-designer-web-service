@@ -1,0 +1,12 @@
+bin
+obj
+*.exe
+*.dll
+*.user
+*.snk
+*.pfx
+Syncfusion.Dashboard.Designer.Web.Service/PlugIns/
+packages
+DesignTimeCache
+cireports
+.vs

@@ -1,0 +1,358 @@
+{
+  "widgetName": "CustomGridWithTotal",
+  "guid": "9253c650-8875-4942-beea-8eb8f3c796f2",
+  "displayName": "CustomGridWithTotal",
+  "category": "Miscellaneous",
+  "description": "Custom Grid widget to show the total value at last row of Grid, also we can do the column linking with parameter through the popup",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+      "src/ej2.min.js"
+    ],
+    "styles": [
+      "style/widget.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Column",
+      "valueType": "both",
+      "name": "column",
+      "min": "1",
+      "max": "100",
+      "optional": "false"
+    }
+  ],
+  "functionalities": [
+    {
+      "header": "Basic Settings",
+      "properties": [
+        {
+          "displayName": "Allow Sorting",
+          "controlType": "bool",
+          "name": "allowSorting",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Allow Filter",
+          "controlType": "bool",
+          "name": "allowfilter",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Horizontal Grid Lines",
+          "controlType": "bool",
+          "name": "horizontal",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Vertical Grid Lines",
+          "controlType": "bool",
+          "name": "vertical",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show Border",
+          "controlType": "bool",
+          "name": "showBorder",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Enable Alternative Row",
+          "controlType": "bool",
+          "name": "enablealtrow",
+          "defaultValue": "false"
+        },
+		{
+          "displayName": "Enable FitToContent",
+          "controlType": "bool",
+          "name": "enableFitToContent",
+          "defaultValue": "true"
+        }
+      ]
+    },
+    {
+      "header": "Header Settings",
+      "properties": [
+        {
+          "displayName": "Show Header",
+          "controlType": "bool",
+          "name": "showHeader",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "headerforeground",
+          "defaultValue": "#2D3748"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "headerbackground",
+          "defaultValue": "#f3f7fa"
+        },
+        {
+          "displayName": "Row Height",
+          "controlType": "number",
+          "name": "headerrowheight",
+          "defaultValue": 42,
+          "min": "15",
+          "max": "120"
+        },
+        {
+          "displayName": "Auto Font Size",
+          "controlType": "bool",
+          "name": "headerautofontsize",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Font Size",
+          "controlType": "number",
+          "name": "headerfontsize",
+          "defaultValue": 16,
+          "min": "10",
+          "max": "60"
+        },
+        {
+          "displayName": "Padding",
+          "controlType": "number",
+          "name": "headerpadding",
+          "defaultValue": 11,
+          "min": "1",
+          "max": "20"
+        }
+      ]
+    },
+    {
+      "header": "Content Settings",
+      "properties": [
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "contentforeground",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "contentbackground",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "displayName": "Alternative Foreground",
+          "controlType": "color",
+          "name": "alternativeforeground",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Alternative Background",
+          "controlType": "color",
+          "name": "alternativebackground",
+          "defaultValue": "#f7f7f7"
+        },
+        {
+          "displayName": "Row Height",
+          "controlType": "number",
+          "name": "contentrowheight",
+          "defaultValue": 32,
+          "min": "15",
+          "max": "120"
+        },
+        {
+          "displayName": "Auto Font Size",
+          "controlType": "bool",
+          "name": "contentautofontsize",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Font Size",
+          "controlType": "number",
+          "name": "contentfontsize",
+          "defaultValue": 16,
+          "min": "10",
+          "max": "60"
+        },
+        {
+          "displayName": "Padding",
+          "controlType": "number",
+          "name": "contentpadding",
+          "defaultValue": 11,
+          "min": "1",
+          "max": "20"
+        }
+      ]
+    },
+	{
+      "header": "Column Color Settings",
+      "properties": [
+		{
+          "displayName": "Column Name",
+          "controlType": "text",
+          "name": "columnText1",
+          "defaultValue": ""
+        },
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "columnFColor1",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "columnBColor1",
+          "defaultValue": "#ffffff"
+        },
+		{
+          "displayName": "Column Name",
+          "controlType": "text",
+          "name": "columnText2",
+          "defaultValue": ""
+        },
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "columnFColor2",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "columnBColor2",
+          "defaultValue": "#ffffff"
+        },
+		{
+          "displayName": "Column Name",
+          "controlType": "text",
+          "name": "columnText3",
+          "defaultValue": ""
+        },
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "columnFColor3",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "columnBColor3",
+          "defaultValue": "#ffffff"
+        },
+		{
+          "displayName": "Column Name",
+          "controlType": "text",
+          "name": "columnText4",
+          "defaultValue": ""
+        },
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "columnFColor4",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "columnBColor4",
+          "defaultValue": "#ffffff"
+        },
+		{
+          "displayName": "Column Name",
+          "controlType": "text",
+          "name": "columnText5",
+          "defaultValue": ""
+        },
+        {
+          "displayName": "Foreground",
+          "controlType": "color",
+          "name": "columnFColor5",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Background",
+          "controlType": "color",
+          "name": "columnBColor5",
+          "defaultValue": "#ffffff"
+        }
+      ]
+    },
+	{
+      "header": "Linking Settings",
+      "properties": [
+		{
+          "displayName": "Link Column Name",
+          "controlType": "text",
+          "name": "linkColumnName1",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Linking URL",
+          "controlType": "text",
+          "name": "linkURL1",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Link Column Name",
+          "controlType": "text",
+          "name": "linkColumnName2",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Linking URL",
+          "controlType": "text",
+          "name": "linkURL2",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Link Column Name",
+          "controlType": "text",
+          "name": "linkColumnName3",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Linking URL",
+          "controlType": "text",
+          "name": "linkURL3",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Link Column Name",
+          "controlType": "text",
+          "name": "linkColumnName4",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Linking URL",
+          "controlType": "text",
+          "name": "linkURL4",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Link Column Name",
+          "controlType": "text",
+          "name": "linkColumnName5",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Linking URL",
+          "controlType": "text",
+          "name": "linkURL5",
+          "defaultValue": ""
+        }
+	   ]
+	}
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

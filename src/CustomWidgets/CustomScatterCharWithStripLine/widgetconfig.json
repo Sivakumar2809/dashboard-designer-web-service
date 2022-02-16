@@ -1,0 +1,272 @@
+{
+  "widgetName": "CustomScatterCharWithStripLine",
+  "guid": "7c7d05a9-9823-4453-ab82-481e7c63729d",
+  "displayName": "ScatterCharWithStripLine",
+  "category": "Miscellaneous",
+  "description": "Sample widget for getting start",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+		"src/ej2.chart.all.min.js"
+    ],
+    "styles": [
+		"style/widget.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Y Value",
+      "valueType": "measure",
+      "name": "Value",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    },
+    {
+      "displayName": "X Value",
+      "valueType": "dimension",
+      "name": "Column",
+      "min": "1",
+      "max": "1",
+      "optional": "true"
+    },
+	{
+      "displayName": "Row Value",
+      "valueType": "dimension",
+      "name": "row",
+      "min": "1",
+      "max": "1",
+      "optional": "true"
+    }
+  ],
+  "functionalities": [
+	{
+      "header": "GridLine Settings",
+      "properties": [
+        {
+          "displayName": "Category Axis",
+          "controlType": "bool",
+          "name": "showGridLineForXaxis",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "PrimaryValue Axis",
+          "controlType": "bool",
+          "name": "showGridLineForYaxis",
+          "defaultValue": "true"
+        }
+      ]
+    },
+    {
+      "header": "Basic Settings",
+      "properties": [
+		{
+          "displayName": "Scatter Bubble Color",
+          "controlType": "color",
+          "name": "scolor",
+          "defaultValue": "#C0C0C0"
+        },
+		{
+          "displayName": "Total Avg Suffix",
+          "controlType": "text",
+          "name": "totalavgtext",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Total Avg Font Size",
+          "controlType": "number",
+          "name": "totalfontsize",
+          "defaultValue": "12",
+          "min": "5",
+          "max": "50"
+        },
+		{
+          "displayName": "Sub Avg Suffix",
+          "controlType": "text",
+          "name": "subavgtext",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Sub Avg Font Size",
+          "controlType": "number",
+          "name": "subfontsize",
+          "defaultValue": "12",
+          "min": "5",
+          "max": "50"
+        },
+		{
+          "displayName": "StripLine Width",
+          "controlType": "number",
+          "name": "striplinewidth",
+          "defaultValue": "1",
+          "min": "1",
+          "max": "50"
+        },
+		{
+          "displayName": "Enable Animation",
+          "controlType": "bool",
+          "name": "enableAnimation",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show Legend",
+          "controlType": "bool",
+          "name": "showLegend",
+          "defaultValue": "false"
+        },
+		{
+          "displayName": "Legend Position",
+          "controlType": "enumeration",
+          "name": "legendPosition",
+          "defaultValue": "Bottom",
+		  "listItems": [
+            "Top",
+            "Bottom",
+			"Left",
+			"Right"
+          ]
+        },
+        {
+          "displayName": "Show Datalabels",
+          "controlType": "bool",
+          "name": "showDatalabels",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "DataLabel FontSize",
+          "controlType": "number",
+          "name": "datalabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "Scatter Bubble Size",
+          "controlType": "number",
+          "name": "bubbleSize",
+          "defaultValue": "8",
+          "min": "0",
+          "max": "10"
+        }
+      ]
+    },
+    {
+      "header": "Categoryaxis Settings",
+      "properties": [
+        {
+          "displayName": "Show CategoryAxis",
+          "controlType": "bool",
+          "name": "showCategoryAxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show CategoryAxis Title",
+          "controlType": "bool",
+          "name": "showCategoryAxisTitle",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show CategoryAxis Titletext",
+          "controlType": "text",
+          "name": "showCategoryAxisTitletext",
+          "defaultValue": " "
+        },
+        {
+          "displayName": "Label Overflow Mode",
+          "controlType": "enumeration",
+          "name": "labelOverflowMode",
+          "defaultValue": "Hide",
+          "listItems": [
+            "Hide",
+            "Trim"
+          ]
+        },
+        {
+          "displayName": "Label Rotation",
+          "controlType": "enumeration",
+          "name": "labelRotation",
+          "defaultValue": "0",
+          "listItems": [
+            "0",
+            "-45",
+            "-90",
+            "45",
+            "90"
+          ]
+        },
+        {
+          "displayName": "Label FontSize",
+          "controlType": "number",
+          "name": "xlabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "CategoryAxisLabel Suffix",
+          "controlType": "text",
+          "name": "casuffixtext",
+          "defaultValue": ""
+        },
+      ]
+    },
+    {
+      "header": "Primaryaxis Settings",
+      "properties": [
+        {
+          "displayName": "Show PrimaryAxis",
+          "controlType": "bool",
+          "name": "showPrimaryAxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show PrimaryAxis Title",
+          "controlType": "bool",
+          "name": "showPrimaryAxisTitle",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show PrimaryAxis Titletext",
+          "controlType": "text",
+          "name": "showPrimaryAxisTitletext",
+          "defaultValue": " "
+        },
+        {
+          "displayName": "Label FontSize",
+          "controlType": "number",
+          "name": "ylabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "Minimum",
+          "controlType": "number",
+          "name": "min",
+          "defaultValue": "0",
+          "min": "-10000000",
+          "max": "10000000"
+        },
+		{
+          "displayName": "Maximum",
+          "controlType": "number",
+          "name": "max",
+          "defaultValue": "1000",
+          "min": "0",
+          "max": "10000000"
+        }
+      ]
+    }
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

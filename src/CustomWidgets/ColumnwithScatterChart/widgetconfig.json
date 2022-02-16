@@ -1,0 +1,485 @@
+{
+  "widgetName": "ColumnwithScatterChart",
+  "guid": "6f275fca-3c61-4915-1e23-05f5a626a3e2",
+  "displayName": "ColumnwithScatterChart",
+  "category": "Miscellaneous",
+  "description": "Sample widget for getting start",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+		"src/ej2Allcharts.min.js"
+    ],
+    "styles": [
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Column Value(s)",
+      "valueType": "measure",
+      "name": "Value",
+      "min": "1",
+      "max": "5",
+      "optional": "false"
+    },
+	{
+      "displayName": "Scatter Value(s)",
+      "valueType": "measure",
+      "name": "SValue",
+      "min": "1",
+      "max": "5",
+      "optional": "false"
+    },
+    {
+      "displayName": "Column",
+      "valueType": "dimension",
+      "name": "Column",
+      "min": "1",
+      "max": "1",
+      "optional": "true"
+    },
+	{
+      "displayName": "Row",
+      "valueType": "dimension",
+      "name": "Row",
+      "min": "1",
+      "max": "1",
+      "optional": "true"
+    }
+  ],
+  "functionalities": [
+	{
+      "header": "GridLine Settings",
+      "properties": [
+        {
+          "displayName": "Category Axis",
+          "controlType": "bool",
+          "name": "showGridLineForXaxis",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "PrimaryValue Axis",
+          "controlType": "bool",
+          "name": "showGridLineForYaxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Secondary Axis",
+          "controlType": "bool",
+          "name": "showGridLineForSecondary",
+          "defaultValue": "false"
+        }
+      ]
+    },
+    {
+      "header": "Basic Settings",
+      "properties": [
+		{
+          "displayName": "Enable Animation",
+          "controlType": "bool",
+          "name": "enableAnimation",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show Legend",
+          "controlType": "bool",
+          "name": "showLegend",
+          "defaultValue": "false"
+        },
+		{
+          "displayName": "Legend Position",
+          "controlType": "enumeration",
+          "name": "legendPosition",
+          "defaultValue": "Bottom",
+		  "listItems": [
+            "Top",
+            "Bottom",
+			"Left",
+			"Right"
+          ]
+        },
+        {
+          "displayName": "Show Datalabels",
+          "controlType": "bool",
+          "name": "showDatalabels",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "DataLabel FontSize",
+          "controlType": "number",
+          "name": "datalabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "Bubble Size",
+          "controlType": "number",
+          "name": "bubbleSize",
+          "defaultValue": "10"
+        }
+      ]
+    },
+    {
+      "header": "Categoryaxis Settings",
+      "properties": [
+        {
+          "displayName": "Show CategoryAxis",
+          "controlType": "bool",
+          "name": "showCategoryAxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show CategoryAxis Title",
+          "controlType": "bool",
+          "name": "showCategoryAxisTitle",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show CategoryAxis Titletext",
+          "controlType": "text",
+          "name": "showCategoryAxisTitletext",
+          "defaultValue": " "
+        },
+        {
+          "displayName": "Label Overflow Mode",
+          "controlType": "enumeration",
+          "name": "labelOverflowMode",
+          "defaultValue": "Hide",
+          "listItems": [
+            "Hide",
+            "Trim"
+          ]
+        },
+        {
+          "displayName": "Label Rotation",
+          "controlType": "enumeration",
+          "name": "labelRotation",
+          "defaultValue": "0",
+          "listItems": [
+            "0",
+            "-45",
+            "-90",
+            "45",
+            "90"
+          ]
+        },
+        {
+          "displayName": "Label FontSize",
+          "controlType": "number",
+          "name": "xlabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        }
+      ]
+    },
+    {
+      "header": "Primaryaxis Settings",
+      "properties": [
+        {
+          "displayName": "Show PrimaryAxis",
+          "controlType": "bool",
+          "name": "showPrimaryAxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show PrimaryAxis Title",
+          "controlType": "bool",
+          "name": "showPrimaryAxisTitle",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show PrimaryAxis Titletext",
+          "controlType": "text",
+          "name": "showPrimaryAxisTitletext",
+          "defaultValue": " "
+        },
+        {
+          "displayName": "Label FontSize",
+          "controlType": "number",
+          "name": "ylabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        }
+      ]
+    },
+	{
+      "header": "Secondaryaxis Settings",
+      "properties": [
+        {
+          "displayName": "Show Secondaryaxis",
+          "controlType": "bool",
+          "name": "showSecondaryaxis",
+          "defaultValue": "true"
+        },
+        {
+          "displayName": "Show Secondaryaxis Title",
+          "controlType": "bool",
+          "name": "showSecondaryaxisTitle",
+          "defaultValue": "false"
+        },
+        {
+          "displayName": "Show Secondaryaxis Titletext",
+          "controlType": "text",
+          "name": "showSecondaryaxisTitletext",
+          "defaultValue": " "
+        },
+        {
+          "displayName": "Label FontSize",
+          "controlType": "number",
+          "name": "secondaryAxisLabelFontSize",
+          "defaultValue": "11",
+          "min": "0",
+          "max": "50"
+        }
+      ]
+    },
+	{
+      "header": "Column Color Settings",
+      "properties": [
+		{
+          "displayName": "Column Series 1 Color",
+          "controlType": "color",
+          "name": "cc1",
+          "defaultValue": "#f29e38"
+        },
+		{
+          "displayName": "Column Series 2 Color",
+          "controlType": "color",
+          "name": "cc2",
+          "defaultValue": "#ff4086"
+        },
+		{
+          "displayName": "Column Series 3 Color",
+          "controlType": "color",
+          "name": "cc3",
+          "defaultValue": "#826af9"
+        },
+		{
+          "displayName": "Column Series 4 Color",
+          "controlType": "color",
+          "name": "cc4",
+          "defaultValue": "#2d9aff"
+        },
+		{
+          "displayName": "Column Series 5 Color",
+          "controlType": "color",
+          "name": "cc5",
+          "defaultValue": "#6e53f8"
+        }
+	  ]
+	},
+	{
+      "header": "Scatter Color Settings",
+      "properties": [
+		{
+          "displayName": "Scatter Series 1 Color",
+          "controlType": "color",
+          "name": "sc1",
+          "defaultValue": "#4ca8ff"
+        },
+		{
+          "displayName": "Scatter Series 2 Color",
+          "controlType": "color",
+          "name": "sc2",
+          "defaultValue": "#67e3d5"
+        },
+		{
+          "displayName": "Scatter Series 3 Color",
+          "controlType": "color",
+          "name": "sc3",
+          "defaultValue": "#2cd9c5"
+        },
+		{
+          "displayName": "Scatter Series 4 Color",
+          "controlType": "color",
+          "name": "sc4",
+          "defaultValue": "#ff764c"
+        },
+		{
+          "displayName": "Scatter Series 5 Color",
+          "controlType": "color",
+          "name": "sc5",
+          "defaultValue": "#ffed4c"
+        }
+	  ]
+	},
+	{
+      "header": "Row Color Settings",
+      "properties": [
+		{
+          "displayName": "Row Series 1 Color",
+          "controlType": "color",
+          "name": "rc1",
+          "defaultValue": "#77A7FB"
+        },
+		{
+          "displayName": "Row Series 2 Color",
+          "controlType": "color",
+          "name": "rc2",
+          "defaultValue": "#E57368"
+        },
+		{
+          "displayName": "Row Series 3 Color",
+          "controlType": "color",
+          "name": "rc3",
+          "defaultValue": "#FBCB43"
+        },
+		{
+          "displayName": "Row Series 4 Color",
+          "controlType": "color",
+          "name": "rc4",
+          "defaultValue": "#34B67A"
+        },
+		{
+          "displayName": "Row Series 5 Color",
+          "controlType": "color",
+          "name": "rc5",
+          "defaultValue": "#F1AB68"
+        },
+		{
+          "displayName": "Row Series 6 Color",
+          "controlType": "color",
+          "name": "rc6",
+          "defaultValue": "#6CC2D9"
+        },
+		{
+          "displayName": "Row Series 7 Color",
+          "controlType": "color",
+          "name": "rc7",
+          "defaultValue": "#195962"
+        },
+		{
+          "displayName": "Row Series 8 Color",
+          "controlType": "color",
+          "name": "rc8",
+          "defaultValue": "#E18878"
+        },
+		{
+          "displayName": "Row Series 9 Color",
+          "controlType": "color",
+          "name": "rc9",
+          "defaultValue": "#1AA27D"
+        },
+		{
+          "displayName": "Row Series 10 Color",
+          "controlType": "color",
+          "name": "rc10",
+          "defaultValue": "#BFAAC7"
+        },
+		{
+          "displayName": "Row Series 11 Color",
+          "controlType": "color",
+          "name": "rc11",
+          "defaultValue": "#89695e"
+        },
+		{
+          "displayName": "Row Series 12 Color",
+          "controlType": "color",
+          "name": "rc12",
+          "defaultValue": "#a5c77f"
+        },
+		{
+          "displayName": "Row Series 13 Color",
+          "controlType": "color",
+          "name": "rc13",
+          "defaultValue": "#f48fb1"
+        },
+		{
+          "displayName": "Row Series 14 Color",
+          "controlType": "color",
+          "name": "rc14",
+          "defaultValue": "#90caf9"
+        },
+		{
+          "displayName": "Row Series 15 Color",
+          "controlType": "color",
+          "name": "rc15",
+          "defaultValue": "#cc4452"
+        }
+	  ]
+	},
+	{
+      "header": "Custom Column Legend Names",
+      "properties": [
+		{
+          "displayName": "Legend 1 Name",
+          "controlType": "text",
+          "name": "columnCustomLegend1",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 2 Name",
+          "controlType": "text",
+          "name": "columnCustomLegend2",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 3 Name",
+          "controlType": "text",
+          "name": "columnCustomLegend3",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 4 Name",
+          "controlType": "text",
+          "name": "columnCustomLegend4",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 5 Name",
+          "controlType": "text",
+          "name": "columnCustomLegend5",
+          "defaultValue": ""
+        }
+	  ]
+	},
+	{
+      "header": "Custom Scatter Legend Names",
+      "properties": [
+		{
+          "displayName": "Legend 1 Name",
+          "controlType": "text",
+          "name": "scatterCustomLegend1",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 2 Name",
+          "controlType": "text",
+          "name": "scatterCustomLegend2",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 3 Name",
+          "controlType": "text",
+          "name": "scatterCustomLegend3",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 4 Name",
+          "controlType": "text",
+          "name": "scatterCustomLegend4",
+          "defaultValue": ""
+        },
+		{
+          "displayName": "Legend 5 Name",
+          "controlType": "text",
+          "name": "scatterCustomLegend5",
+          "defaultValue": ""
+        }
+	  ]
+	}
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}

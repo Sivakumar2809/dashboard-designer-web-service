@@ -1,0 +1,392 @@
+[
+  {
+    "provider": "Google",
+    "clientId": "658780786576-c4s579ls7bnomkdh5u0lf4c8bnhvma9t.apps.googleusercontent.com",
+    "clientSecret": "fS3qmaWVVscRM9Xm3I-AAxCz",
+    "authorizationUrl": "https://accounts.google.com/o/oauth2/auth?",
+    "tokenUrl": "https://www.googleapis.com/oauth2/v4/token?",
+    "tokenRefreshUrl": "https://www.googleapis.com/oauth2/v4/token?",
+    "tokenRevokeUrl": "https://accounts.google.com/o/oauth2/revoke?token={0}",
+    "meUrl": "https://people.googleapis.com/v1/people/me?"
+  },
+  {
+    "provider": "Facebook",
+    "clientId": "201025701239469",
+    "clientSecret": "935f946ed562777faf353885b33fb99d",
+    "authorizationUrl": "https://www.facebook.com/v3.1/dialog/oauth?",
+    "tokenUrl": "https://graph.facebook.com/v3.1/oauth/access_token?",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "https://graph.facebook.com/v3.1//{0}/permissions",
+    "meUrl": "https://graph.facebook.com/v3.1/me?fields=name,id,email"
+  },
+  {
+    "provider": "AzureDevOps",
+    "clientId": "C5A97A51-0794-4EB9-8F8B-C826B6D22C92",
+    "clientSecret": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im9PdmN6NU1fN3AtSGpJS2xGWHo5M3VfVjBabyJ9.eyJjaWQiOiJjNWE5N2E1MS0wNzk0LTRlYjktOGY4Yi1jODI2YjZkMjJjOTIiLCJjc2kiOiJmZGRmNTdmMi1iZDM5LTQxMTItYjc4Yy1hZTdkYjgzNmY0MDQiLCJuYW1laWQiOiI5ZGRhMDZmZS02NzAzLTZhNTktYmM5Ni0zYmYxM2FhMzBhMjUiLCJpc3MiOiJhcHAudnNzcHMudmlzdWFsc3R1ZGlvLmNvbSIsImF1ZCI6ImFwcC52c3Nwcy52aXN1YWxzdHVkaW8uY29tIiwibmJmIjoxNTQ4MjQ5MzQ0LCJleHAiOjE3MDYwMTU3NDR9.UtfCaPz6bYm1rE9YtFisk6ClD2Tr1rv-Un18xe1Th-V-qlqqibjUuL--QCDxjmpCbpf1WyMU6IsLxOaAyTLoRA9BKUNjnPjUNs-qr12xd800fZAduuX3rNEq0O4c0tkUK-BVipTCvpkoa3Smuf2q6M_w8tQMFooTEYlLUlsXlY6wTdaeU7PFWQOu75Za8P_XtRpCqvOfSNKU-QFO5mdvVCVu2YdcV2JzdVgF7mH6caJJjPR9jOc0OECic1J9EyCl4DjEBcxtCEPUZL9oAlW4XsIgRgSRCBB8V6wSGaOTks8fZSZbraQ4Meo4tVUvbwYxEPHeoteuy9BzYCMSaePqgw",
+    "authorizationUrl": "https://app.vssps.visualstudio.com/oauth2/authorize?",
+    "tokenUrl": "https://app.vssps.visualstudio.com/oauth2/token?",
+    "tokenRefreshUrl": "https://app.vssps.visualstudio.com/oauth2/token?",
+    "tokenRevokeUrl": "https://app.vsaex.visualstudio.com/oauth2/revoke?",
+    "meUrl": "https://app.vssps.visualstudio.com/_apis/profile/profiles/me?"
+  },
+  {
+    "provider": "ApplicationInsights",
+    "clientId": "cde965b2-7894-4b5a-9369-8f5c143e19b3",
+    "clientSecret": "DmBU6RJAKg0ImoL9w1KrAafKwTRIXykTGyIROZZi8mM=",
+    "authorizationUrl": "https://login.microsoftonline.com/msdnprof397licensesyncfusio.onmicrosoft.com/oauth2/authorize?",
+    "tokenUrl": "https://login.microsoftonline.com/msdnprof397licensesyncfusio.onmicrosoft.com/oauth2/token?",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": ""
+  },
+  {
+    "provider": "Salesforce",
+    "clientId": "3MVG9yZ.WNe6byQC.PLtO3avgoS0GLgdrbU6zfcYXxS.ZvqyuddtJRwabo2PBFFRyCJY0dKCLLXdXj2YjL4IP",
+    "clientSecret": "8907892713667465402",
+    "authorizationUrl": "https://login.salesforce.com/services/oauth2/authorize?",
+    "tokenUrl": "https://login.salesforce.com/services/oauth2/token",
+    "tokenRefreshUrl": "https://login.salesforce.com/services/oauth2/token",
+    "tokenRevokeUrl": "https://login.salesforce.com/services/oauth2/revoke",
+    "meUrl": ""
+  },
+  {
+    "provider": "Smartsheet",
+    "clientId": "5eu6cvyrnzivi0hpw40",
+    "clientSecret": "xcti971ivcu4gnmwwjk",
+    "authorizationUrl": "https://app.smartsheet.com/b/authorize?",
+    "tokenUrl": "https://api.smartsheet.com/2.0/token",
+    "tokenRefreshUrl": "https://api.smartsheet.com/2.0/token",
+    "tokenRevokeUrl": "https://api.smartsheet.com/2.0/token",
+    "meUrl": "https://api.smartsheet.com/2.0/users/me"
+  },
+  {
+    "provider": "SurveyMonkey",
+    "clientId": "IzRR2NLxRjeSW7Oo1d5HVA",
+    "clientSecret": "187813017300864265052916547322708109961",
+    "authorizationUrl": "https://api.surveymonkey.com/oauth/authorize?",
+    "tokenUrl": "https://api.surveymonkey.com/oauth/token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.surveymonkey.com/v3/users/me"
+  },
+  {
+    "provider": "Asana",
+    "clientId": "955410972748102",
+    "clientSecret": "655158fd53ef403ec4b36fcfa910f4d5",
+    "authorizationUrl": "https://app.asana.com/-/oauth_authorize?",
+    "tokenUrl": "https://app.asana.com/-/oauth_token",
+    "tokenRefreshUrl": "https://app.asana.com/-/oauth_token",
+    "tokenRevokeUrl": "",
+    "meUrl": ""
+  },
+  {
+    "provider": "Slack",
+    "clientId": "505530822484.504963588640",
+    "clientSecret": "105cc1b746cf920328ab6554ba38468e",
+    "authorizationUrl": "https://slack.com/oauth/authorize?",
+    "tokenUrl": "https://slack.com/api/oauth.access",
+    "tokenRefreshUrl": "https://slack.com/api/oauth.access",
+    "tokenRevokeUrl": "https://slack.com/api/auth.revoke?token={0}",
+    "meUrl": "https://slack.com/api/users.profile.get"
+  },
+  {
+    "provider": "Buffer",
+    "clientId": "5be02ad38753863d9c14df44",
+    "clientSecret": "244eb8f76fea77bec1f3a730c7b47987",
+    "authorizationUrl": "https://bufferapp.com/oauth2/authorize?",
+    "tokenUrl": "https://api.bufferapp.com/1/oauth2/token.json",
+    "tokenRefreshUrl": "https://api.bufferapp.com/1/oauth2/token.json",
+    "tokenRevokeUrl": "https://api.bufferapp.com/1/user/deauthorize.json",
+    "meUrl": "https://api.bufferapp.com/1/user.json?"
+  },
+  {
+    "provider": "ZohoCRM",
+    "clientId": "1000.8TWGY7HEPOP528090HAJ2DJEAEZ3LY",
+    "clientSecret": "64117af571522b426045333cb19c29a7d873ffce68",
+    "authorizationUrl": "https://accounts.zoho.com/oauth/v2/auth?",
+    "tokenUrl": "https://accounts.zoho.com/oauth/v2/token",
+    "tokenRefreshUrl": "https://accounts.zoho.com/oauth/v2/token",
+    "tokenRevokeUrl": "https://accounts.zoho.com/oauth/v2/token/revoke?token={0}",
+    "meUrl": "https://accounts.zoho.com/oauth/user/info"
+  },
+  {
+    "provider": "MicrosoftKaizala",
+    "clientId": "39a08524-723b-4b46-ad9b-1663df26d5bd",
+    "clientSecret": "WRNTNE7S46",
+    "authorizationUrl": "https://ds.kaiza.la/api/Oauth/Authorize?",
+    "tokenRefreshUrl": "https://ds.kaiza.la/api/Oauth/Authorize?",
+    "tokenUrl": "https://ds.kaiza.la/api/oauth/token",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.kaiza.la/v1/users/me"
+  },
+  {
+    "provider": "Bitly",
+    "clientId": "d7c7e42781a5bb0e6d19cf0bcb69d7391269f7f9",
+    "clientSecret": "6a79a70a5bd31c1af9b65d8e26bd8601a6c43c2a",
+    "authorizationUrl": "https://bitly.com/oauth/authorize?",
+    "tokenUrl": "https://api-ssl.bitly.com/oauth/access_token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api-ssl.bitly.com/v4/user"
+  },
+  {
+    "provider": "GenesysPureCloud",
+    "clientId": "0cfafbe8-7f84-450b-b6a1-3ffe95d24039",
+    "clientSecret": "pBZjwCzRB84vYog5A6vj50M58CJCbu4KyM6-8Co2AIQ",
+    "authorizationUrl": "https://login.mypurecloud.com/oauth/authorize?",
+    "tokenUrl": "https://login.mypurecloud.com/oauth/token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.mypurecloud.com/api/v2/users/me"
+  },
+  {
+    "provider": "BaseCrm",
+    "clientId": "d4b10b93e687d551bd832e13a821fb21d4116f564e7a2057fe0eaea6db127501",
+    "clientSecret": "dd3d464858b63f82f12e950ae931cd315e182bcc6aba9dc5fcb5df479bcc4789",
+    "authorizationUrl": "https://api.getbase.com/oauth2/authorize?",
+    "tokenUrl": "https://api.getbase.com/oauth2/token",
+    "tokenRefreshUrl": "https://api.getbase.com/oauth2/token",
+    "tokenRevokeUrl": "https://api.getbase.com/oauth2/revoke",
+    "meUrl": "https://api.getbase.com/v2/users/self"
+  },
+  {
+    "provider": "Todoist",
+    "clientId": "6c8eaf07a30b4407a4592aa19e4a6b15",
+    "clientSecret": "16f90139de5e413aaba4cc937db7c548",
+    "authorizationUrl": "https://todoist.com/oauth/authorize?",
+    "tokenUrl": "https://todoist.com/oauth/access_token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "https://todoist.com/api/access_tokens/revoke",
+    "meUrl": "https://todoist.com/api/v8/sync"
+  },
+  {
+    "provider": "Basecamp3",
+    "clientId": "32ce28cd4127bca49d65f341dda2b0f256182f4f",
+    "clientSecret": "f37fef45c06e898fe20e46bbbca97fbda6e23eaf",
+    "authorizationUrl": "https://launchpad.37signals.com/authorization/new?",
+    "tokenUrl": "https://launchpad.37signals.com/authorization/token",
+    "tokenRefreshUrl": "https://launchpad.37signals.com/authorization/token",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://launchpad.37signals.com/authorization.json"
+  },
+  {
+    "provider": "Intercom",
+    "clientId": "0168fa24-8c80-4e7f-b626-94188ade29c6",
+    "clientSecret": "2c5b7e0b-e254-40c0-8a34-8251ef002845",
+    "authorizationUrl": "https://app.intercom.io/oauth?",
+    "tokenUrl": "https://api.intercom.io/auth/eagle/token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.intercom.io/me"
+  },
+  {
+    "provider": "Optimizely",
+    "clientId": "11811170019",
+    "clientSecret": "wPcWwvHLw3vIiOYfZ-QDNopQs-MW1PedRfe1wnkF3RY",
+    "authorizationUrl": "https://app.optimizely.com/oauth2/authorize?",
+    "tokenUrl": "https://app.optimizely.com/oauth2/token",
+    "tokenRefreshUrl": "https://app.optimizely.com/oauth2/token",
+    "tokenRevokeUrl": "",
+    "meUrl": ""
+  },
+  {
+    "provider": "Pipedrive",
+    "clientId": "509e4576dc5b3461",
+    "clientSecret": "925456de28ceea9339f111e9c4a60644370235be",
+    "authorizationUrl": "https://oauth.pipedrive.com/oauth/authorize?",
+    "tokenUrl": "https://oauth.pipedrive.com/oauth/token",
+    "tokenRefreshUrl": "https://oauth.pipedrive.com/oauth/token",
+    "tokenRevokeUrl": "https://oauth.pipedrive.com/oauth/revoke",
+    "meUrl": "https://api-proxy.pipedrive.com/users/me"
+  },
+  {
+    "provider": "Hubspot",
+    "clientId": "e1168c6d-0a17-4c3e-b2fe-e5c72aebc3c7",
+    "clientSecret": "a11125ae-4137-4c3d-a8c2-3cc5da1e20e7",
+    "authorizationUrl": "https://app.hubspot.com/oauth/authorize?",
+    "tokenUrl": "https://api.hubapi.com/oauth/v1/token",
+    "tokenRefreshUrl": "https://api.hubapi.com/oauth/v1/token",
+    "tokenRevokeUrl": "https://api.hubapi.com/oauth/v1/refresh-tokens",
+    "meUrl": "https://api.hubapi.com/integrations/v1/me?"
+  },
+  {
+    "provider": "LinkedIn",
+    "clientId": "81ui046eqalk51",
+    "clientSecret": "eyPBqHNTTPTmEPIC",
+    "authorizationUrl": "https://www.linkedin.com/oauth/v2/authorization?",
+    "tokenUrl": "https://www.linkedin.com/oauth/v2/accessToken",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.linkedin.com/v2/me"
+  },
+  {
+    "provider": "Pinterest",
+    "clientId": "4999654123080014769",
+    "clientSecret": "325be5f4b4603c587d2fdbc92c617418235af7c107476caef11ae4c81f28257b",
+    "authorizationUrl": "https://api.pinterest.com/oauth?",
+    "tokenUrl": "https://api.pinterest.com/v1/oauth/token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.pinterest.com/v1/me/"
+  },
+  {
+    "provider": "Microsoft",
+    "clientId": "193e7025-937c-44d5-8b60-4cda613eb117",
+    "clientSecret": "fjvsPE32{@mnqHVKAM101*-",
+    "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?",
+    "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+    "tokenRefreshUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://graph.microsoft.com/v1.0/me"
+  },
+  {
+    "provider": "Box",
+    "clientId": "p274td722pzc7r5so3d1i9d988yglws2",
+    "clientSecret": "X6NpkgEzrY11p1cU4dAAc1X0OBzY3JJe",
+    "authorizationUrl": "https://account.box.com/api/oauth2/authorize?",
+    "tokenUrl": "https://api.box.com/oauth2/token",
+    "tokenRefreshUrl": "https://api.box.com/oauth2/token",
+    "tokenRevokeUrl": "https://api.box.com/oauth2/revoke",
+    "meUrl": "https://api.box.com/2.0/users/me"
+  },
+  {
+    "provider": "QuickBooks",
+    "clientId": "Q01UAkwjXXfaDyOw0Frs2cfJbbykoj3pV58DtS8VGV5fW7prDL",
+    "clientSecret": "atbAEVOnPUIB0FsStErQtrWxooUOQOkgyTs7hEZz",
+    "authorizationUrl": "https://appcenter.intuit.com/connect/oauth2?",
+    "tokenUrl": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+    "tokenRefreshUrl": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+    "tokenRevokeUrl": "https://oauth.platform.intuit.com/oauth2/v1/tokens/revoke",
+    "meUrl": "https://accounts.platform.intuit.com/v1/openid_connect/userinfo"
+  },
+  {
+    "provider": "Infusionsoft",
+    "clientId": "sj57ns7nt9jdgj5hbb5c79bb",
+    "clientSecret": "S9HYemmeMs",
+    "authorizationUrl": "https://signin.infusionsoft.com/app/oauth/authorize?",
+    "tokenUrl": "https://api.infusionsoft.com/token",
+    "tokenRefreshUrl": "https://api.infusionsoft.com/token",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.infusionsoft.com/crm/rest/v1/oauth/connect/userinfo.json"
+  },
+  {
+    "provider": "WordPress",
+    "clientId": "64073",
+    "clientSecret": "gqhmrSuhNdSeSXlT2k4xdJZh7hncBXDGihxWfnh6fkUDt1k8UGvycxyiJ7sQHb8M",
+    "authorizationUrl": "https://public-api.wordpress.com/oauth2/authorize?",
+    "tokenUrl": "https://public-api.wordpress.com/oauth2/token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://public-api.wordpress.com/rest/v1.1/me"
+  },
+  {
+    "provider": "Basecamp2",
+    "clientId": "2de3883bee2c1158af83729f366a4361d9af8a79",
+    "clientSecret": "4b3715504c1fff903e62d15ec00cc746f95b3587",
+    "authorizationUrl": "https://launchpad.37signals.com/authorization/new?type=web_server",
+    "tokenUrl": "https://launchpad.37signals.com/authorization/token?type=web_server",
+    "tokenRefreshUrl": "https://launchpad.37signals.com/authorization/token?type=refresh",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://launchpad.37signals.com/authorization.json"
+  },
+  {
+    "provider": "EventBrite",
+    "clientId": "GUIK4XCITZ5B3CHEKI",
+    "clientSecret": "22C7KNOUZ3TPB2FDQNJ4BYJM6TYUTAYYLMSQ5AXMFGTORPRNOY",
+    "authorizationUrl": "https://www.eventbrite.com/oauth/authorize?",
+    "tokenUrl": "https://www.eventbrite.com/oauth/token?",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://www.eventbriteapi.com/v3/users/me/?"
+  },
+  {
+    "provider": "MicrosoftDynamicsCRM",
+    "clientId": "12e9e484-2d81-477a-afbc-cd01f7d28b0c",
+    "clientSecret": "rb/PwlSGg6Akwc/JhOgmlkMkZhPgTOw6CX8sXIETjRw=",
+    "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?",
+    "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+    "tokenRefreshUrl": "https://login.microsoftonline.com/common/oauth2/token",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://{0}/api/data/v9.0/WhoAmI"
+  },
+  {
+    "provider": "FreshBooks",
+    "clientId": "32eddfe7b76b5340686f6d89505786929bcd0044572761ce7002c031f8e1d466",
+    "clientSecret": "8bf86e8ce8f51ea7661aa29d3e3a6166ba521a43a8243f21e94df77b08ab29f5",
+    "authorizationUrl": "https://my.freshbooks.com/service/auth/oauth/authorize?",
+    "tokenUrl": "https://my.freshbooks.com/auth/oauth/token",
+    "tokenRefreshUrl": "https://my.freshbooks.com/auth/oauth/token",
+    "tokenRevokeUrl": "https://my.freshbooks.com/auth/oauth/token/revoke",
+    "meUrl": "https://my.freshbooks.com/auth/api/v1/users/me"
+  },
+  {
+    "provider": "Dropbox",
+    "clientId": "t0606ey9yc20lq7",
+    "clientSecret": "b52qgtpkroerws9",
+    "authorizationUrl": "https://www.dropbox.com/1/oauth2/authorize?",
+    "tokenUrl": "https://api.dropboxapi.com/1/oauth2/token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "https://api.dropboxapi.com/2/auth/token/revoke",
+    "meUrl": "https://api.dropboxapi.com/2/users/get_current_account"
+  },
+  {
+    "provider": "Projectplace",
+    "clientId": "29c21bda6ac8e20538e2963b034e8af0",
+    "clientSecret": "e003d75011a2cf8b10be3a36ceca062daa971872",
+    "authorizationUrl": "https://api.projectplace.com/oauth2/authorize?",
+    "tokenUrl": "https://api.projectplace.com/oauth2/access_token",
+    "tokenRefreshUrl": "https://api.projectplace.com/oauth2/access_token",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.projectplace.com/1/user/me/profile"
+  },
+  {
+    "provider": "Podio",
+    "clientId": "syncfusion-dashboards",
+    "clientSecret": "Ze8K3EAwzdrFGur4hr8ZgD5HKwmQNHq5yzIMuhBNpnB3FurWI6ktShVkuX8LLGzS",
+    "authorizationUrl": "https://podio.com/oauth/authorize?",
+    "tokenUrl": "https://podio.com/oauth/token?",
+    "tokenRefreshUrl": "https://podio.com/oauth/token?grant_type=refresh_token",
+    "tokenRevokeUrl": "https://podio.com/oauth/token/invalidate",
+    "meUrl": "https://api.podio.com/user"
+  },
+  {
+    "provider": "Vimeo",
+    "clientId": "e8968fd1386ba1eca98b49f57dce515ad85b65aa",
+    "clientSecret": "YKSCIAI5XoabYIz/lFhhB9vLzO1LK0RaInXz4rfpYUJSzEQ//0bixtRVLEoL0xA5ehsTAr8Me65JZL1EacfbfKTfmfw4Lw8dd8D0g9SCRYs6HbvkwEhYTt74PsWUMwb1",
+    "authorizationUrl": "https://api.vimeo.com/oauth/authorize?",
+    "tokenUrl": "https://api.vimeo.com/oauth/access_token",
+    "tokenRefreshUrl": "",
+    "tokenRevokeUrl": "https://api.vimeo.com/tokens",
+    "meUrl": "https://api.vimeo.com/me"
+  },
+  {
+    "provider": "Wistia",
+    "clientId": "4c289f27c797d77f0f64409359b5d57d9b956e1e1041ad78f394b1462c15d211",
+    "clientSecret": "ecb9a89fa257795adf60a8262df2cab8e4fa0a1249ea8a539d5634ae2e1b7255",
+    "authorizationUrl": "https://app.wistia.com/oauth/authorize?",
+    "tokenUrl": "https://api.wistia.com/oauth/token",
+    "tokenRefreshUrl": "https://api.wistia.com/oauth/token",
+    "tokenRevokeUrl": "",
+    "meUrl": "https://api.wistia.com/v1/account.json"
+  },
+  {
+    "provider": "MarkupTrace",
+    "clientId": "b5df5d4e-ccc5-451e-a4aa-e5f8ddd1f27e",
+    "clientSecret": "trvv2eSkIe34h3N_OKQi@m:zwNus=S?=",
+    "authorizationUrl": "https://login.microsoftonline.com/te/teamyell.com/b2c_1_login/oauth2/v2.0/authorize?",
+    "tokenUrl": "https://login.microsoftonline.com/te/teamyell.com/b2c_1_login/oauth2/v2.0/token",
+    "tokenRefreshUrl": "https://login.microsoftonline.com/te/teamyell.com/b2c_1_login/oauth2/v2.0/token",
+    "tokenRevokeUrl": "",
+    "meUrl": ""
+  },
+  {
+    "provider": "Xero",
+    "clientId": "E36975EBBA6D426F93C4923E503A2280",
+    "clientSecret": "pznbYI-7TiJRUCdb3WmD2JLxSEgaW1Mr0Z-vAo_TumU_t6OX",
+    "authorizationUrl": "https://login.xero.com/identity/connect/authorize?",
+    "tokenUrl": "https://identity.xero.com/connect/token",
+    "tokenRefreshUrl": "https://identity.xero.com/connect/token",
+    "tokenRevokeUrl": "https://identity.xero.com/connect/revocation",
+    "meUrl": "https://api.xero.com/api.xro/2.0/Users"
+  }
+]

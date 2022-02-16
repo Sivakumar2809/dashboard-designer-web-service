@@ -1,0 +1,232 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Configurations>Debug;Release;onpremiseboldbi;onpremiseboldbi-debug</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='onpremiseboldbi|AnyCPU'">
+    <DefineConstants>TRACE;onpremiseboldbi</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;Release</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;Debug</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='onpremiseboldbi-debug|AnyCPU'">
+    <DefineConstants>TRACE;onpremiseboldbi</DefineConstants>
+  </PropertyGroup>  
+  <PropertyGroup>
+  <AssemblySearchPaths>$(ReferencePath);$(AssemblySearchPaths)</AssemblySearchPaths>
+  <UserSecretsId>dd6a2366-0096-40aa-b670-f3de8da59b34</UserSecretsId>
+</PropertyGroup>  
+  <ItemGroup>
+    <Compile Remove="cultures\**" />
+    <Content Remove="cultures\**" />
+    <EmbeddedResource Remove="cultures\**" />
+    <None Remove="cultures\**" />
+  </ItemGroup>  
+  <ItemGroup>
+    <Content Remove="app_data\BoldBI_OAuthConfiguration.json" />
+    <Content Remove="app_data\Syncfusion_OAuthConfiguration.json" />
+  </ItemGroup>      
+  <ItemGroup>
+    <PackageReference Include="KBCsv" Version="6.0.0" />
+	<PackageReference Include="KBCsv.Extensions" Version="6.0.0" />
+	<PackageReference Include="KBCsv.Extensions.Data" Version="6.0.0" />
+	<PackageReference Include="Syncfusion.EJ1.Widgets" Version="*" />
+	<PackageReference Include="Syncfusion.EJ2.Widgets" Version="*" />
+	<PackageReference Include="Syncfusion.EJDashboardDesigner" Version="*" />
+	<PackageReference Include="TimeZoneConverter" Version="3.3.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi">
+      <Version>5.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.Azure.KeyVault.Core">
+      <Version>2.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <Version>1.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Net.Compilers">
+      <Version>2.1.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualBasic">
+      <Version>10.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Syncfusion.XlsIO.Net.Core" Version="18.3.0.47" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+	<PackageReference Include="SSH.NET" Version="2016.1.0" />
+    <PackageReference Include="System.Data.SQLite">
+      <Version>1.0.112</Version>
+    </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.Caching" Version="4.7.0" />
+    <PackageReference Include="WindowsAzure.Storage">
+      <Version>8.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Dashboard.Xml.Base" Version="*" />
+  </ItemGroup>
+  <ItemGroup Condition="!$(DefineConstants.Contains('onpremiseboldbi'))">
+	<PackageReference Include="Syncfusion.BoldBI.Localization" Version="*" />
+    <PackageReference Include="Syncfusion.Server.Base.Cloud.Encryption" Version="1.0.0" />
+    <PackageReference Include="Syncfusion.Server.Base.Cloud.Logger" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Json.Base" Version="*" />
+	<PackageReference Include="Syncfusion.Dashboard.Core" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Service.Base" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Core.Configuration" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Web.OAuth" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Core.XmlRepository" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.DataManager" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Web.Data.Handler" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Core.JsonRepository" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Web.Serialization.DOM" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Designer.Logger" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Web.Serialization" Version="*" />
+    <PackageReference Include="Syncfusion.Data.Analytics.Base" Version="*" />
+    <PackageReference Include="Syncfusion.Dashboard.Azure.PhantomJS" Version="2.3.0.32" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="$(DefineConstants.Contains('onpremiseboldbi'))">
+	<Reference Include="Syncfusion.BoldBI.Localization">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.BoldBI.Localization.dll</HintPath>
+    </Reference>
+	<PackageReference Include="log4net" Version="2.0.12" />
+     <PackageReference Include="Syncfusion.Dashboard.Server.Base.Encryption" Version="1.0.0" />
+    <PackageReference Include="Syncfusion.Dashboard.Server.Base.logger" Version="1.0.0" />
+   <Reference Include="Syncfusion.Dashboard.Json.Base">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Json.Base.dll</HintPath>
+    </Reference>
+   <Reference Include="Syncfusion.Dashboard.Core">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Core.dll</HintPath>
+    </Reference>
+	 <Reference Include="Syncfusion.Dashboard.Service.Base">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Service.Base.dll</HintPath>
+    </Reference>
+	 <Reference Include="Syncfusion.Dashboard.Core.Configuration">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Core.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Dashboard.Core.JsonRepository">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Core.JsonRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Dashboard.DataManager">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.DataManager.dll</HintPath>
+    </Reference>
+
+	<Reference Include="Syncfusion.Dashboard.Web.Data.Handler">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Web.Data.Handler.dll</HintPath>
+    </Reference>
+   
+	<Reference Include="Syncfusion.Dashboard.Designer.Logger">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Designer.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="syncfusion.dashboard.web.oauth">
+      <HintPath>..\..\designer-repos\assembly\syncfusion.dashboard.web.oauth.dll</HintPath>
+    </Reference>
+	<Reference Include="Syncfusion.Dashboard.Web.Serialization.DOM">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Web.Serialization.DOM.dll</HintPath>
+    </Reference>
+	<Reference Include="Syncfusion.Dashboard.Core.XmlRepository">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Core.XmlRepository.dll</HintPath>
+    </Reference>
+	
+	 <Reference Include="Syncfusion.Dashboard.Web.Serialization">
+      <HintPath>..\..\designer-repos\assembly\Syncfusion.Dashboard.Web.Serialization.dll</HintPath>
+    </Reference>
+	 <Reference Include="Syncfusion.Data.Analytics.Base">
+	   <HintPath>..\..\designer-repos\assembly\Syncfusion.Data.Analytics.Base.dll</HintPath>
+	 </Reference>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="colorsets\defaultcolorsets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="dashboardthemes\dark.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="dashboardthemes\light.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="logs\Log4Net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition="$(DefineConstants.Contains('onpremiseboldbi'))">
+	<Content Update="logs\k8s\Log4Net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition="!$(DefineConstants.Contains('onpremiseboldbi'))">
+	<Content Update="logs\azure\Log4Net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app_data\GASettingsV3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="app_data\sampledslist.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+   
+    <None Update="localization\designerlocalization.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Target Name="Copyplugins" BeforeTargets="BeforeBuild" Condition="'$(CompilationFrom)'=='cake'">
+    <PropertyGroup>
+      <scriptlocation>$(ProjectDir)PluginsInstaller\install.ps1</scriptlocation>
+    </PropertyGroup>
+    <Exec Condition=" '$(ReferencePath)' == '' " Command="powershell.exe -file $(scriptlocation) -projectDir $(ProjectDir) -nuggetUrl $(NexusServerUrl) -domain $(PublishDomain)" />
+    <Exec Condition=" '$(ReferencePath)' != '' " Command="powershell.exe -file $(scriptlocation) -projectDir $(ProjectDir) -nuggetUrl $(NexusServerUrl) -domain $(PublishDomain) -referencepath $(ReferencePath)" />
+	 <ItemGroup>
+		<plugins Include="Plugins\**" />
+    </ItemGroup>
+	<ItemGroup>
+     <None Include="@(plugins)" Link="Plugins\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+  </Target>
+<Target Name="Copy Resources" BeforeTargets="BeforeBuild">
+  <ItemGroup>
+		<sampleds Include="sampleds\**" />
+		<Connection Include="Connection\**" />
+		<scripts Include="scripts\**" />
+		<themes Include="themes\**" />
+		<fonts Include="fonts\**" />
+		<shapefiles Include="shapefiles\**" />
+		<customwidgets Include="CustomWidgets\**" />
+		<locale Include="locale\**" />
+		<cultures Include="cultures\boldbi.cultures.min.js" />
+		<phantomjs Include="..\packages\syncfusion.dashboard.azure.phantomjs\2.3.0.32\content\**" />
+    </ItemGroup>
+  <ItemGroup Condition=" '$(ReferencePath)' == '' ">
+    <None Include="@(phantomjs)" Link="%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+<ItemGroup>
+		<None Include="@(sampleds)" Link="sampleds\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(Connection)" Link="Connection\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(scripts)" Link="wwwroot\scripts\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(themes)" Link="wwwroot\themes\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(fonts)" Link="wwwroot\fonts\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(shapefiles)" Link="wwwroot\shapefiles\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(customwidgets)" Link="CustomWidgets\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(locale)" Link="locale\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="@(cultures)" Link="wwwroot\cultures\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+</Target>
+</Project>

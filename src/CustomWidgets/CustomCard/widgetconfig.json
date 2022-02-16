@@ -1,0 +1,103 @@
+{
+  "widgetName": "CustomCard",
+  "guid": "116a32ba-a4bf-49f5-a1d2-9d54c684e871",
+  "displayName": "CustomCard",
+  "category": "Miscellaneous",
+  "description": "Sample widget for getting start",
+  "srcFile": "src/sourcefile.js",
+  "version": "3.1.0.0",
+  "dependencies": {
+    "scripts": [
+      "src/widget.js"
+    ],
+    "styles": [
+      "style/widget.css"
+    ]
+  },
+  "dataFields": [
+    {
+      "displayName": "Column",
+      "valueType": "dimension",
+      "name": "name",
+      "min": "1",
+      "max": "1",
+      "optional": "false"
+    }
+  ],
+  "functionalities": [
+    {
+      "header": "Basic Properties",
+      "properties": [
+		{
+          "displayName": "Title Text",
+          "controlType": "text",
+          "name": "ttext",
+          "defaultValue": "Name : "
+        },
+        {
+          "displayName": "Text Background Color",
+          "controlType": "color",
+          "name": "textBackground",
+          "defaultValue": "#ffffff"
+        },
+		{
+          "displayName": "Text Color",
+          "controlType": "color",
+          "name": "textForeground",
+          "defaultValue": "#000000"
+        },
+        {
+          "displayName": "Size",
+          "controlType": "number",
+          "name": "textSize",
+          "defaultValue": "20",
+          "min": "0",
+          "max": "50"
+        },
+		{
+          "displayName": "Text Align",
+          "controlType": "enumeration",
+          "name": "textAlign",
+          "defaultValue": "Center",
+          "listItems": [
+            "Center",
+            "Left",
+			"Right"
+          ]
+        },
+        {
+          "displayName": "Style",
+          "controlType": "enumeration",
+          "name": "textStyle",
+          "defaultValue": "normal",
+          "listItems": [
+            "normal",
+            "italic"
+          ]
+        },
+		{
+          "displayName": "Take First Value",
+          "controlType": "bool",
+          "name": "first",
+          "defaultValue": "true"
+        },
+		{
+          "displayName": "Bold",
+          "controlType": "bool",
+          "name": "bold",
+          "defaultValue": "true"
+        }
+      ]
+    }
+  ],
+  "filterSettings": {
+    "masterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    },
+    "ignoreMasterFilter": {
+      "visible": "true",
+      "defaultValue": "false"
+    }
+  }
+}
